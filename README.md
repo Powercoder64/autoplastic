@@ -29,7 +29,7 @@ Training is coordinated by a **stability gate** `S = exp(-||ΔW||_F)` and a **tw
 
 ## Quick Start
 
-```bash
+
 # 1) Create and activate an environment (example)
 conda create -n ann-cifar python=3.10 -y
 conda activate ann-cifar
