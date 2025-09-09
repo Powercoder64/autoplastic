@@ -31,8 +31,10 @@ Training is coordinated by a **stability gate** `S = exp(-||ΔW||_F)` and a **tw
 
 
 **1) Create and activate an environment (example)**
+```bash
 conda create -n ann-cifar python=3.10 -y
 conda activate ann-cifar
+```
 
 **2) Install dependencies (choose the CUDA build that matches your driver if needed)**
 pip install torch torchvision
@@ -79,6 +81,7 @@ P: [0.93, 0.91, 0.90, 0.88, 0.86, 0.85]
 α: [0.58, 0.55, 0.52, 0.50, 0.49, 0.47]
 mean C: [0.91, 0.89, 0.87, 0.84, 0.82, 0.80]
 pruned %: [9.0, 11.0, 13.0, 16.0, 18.0, 20.0]
+```
 
 ## Citation
 
