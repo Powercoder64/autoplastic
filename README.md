@@ -30,14 +30,14 @@ Training is coordinated by a **stability gate** `S = exp(-||ΔW||_F)` and a **tw
 ## Quick Start
 
 
-# 1) Create and activate an environment (example)
+**1) Create and activate an environment (example)**
 conda create -n ann-cifar python=3.10 -y
 conda activate ann-cifar
 
-# 2) Install dependencies (choose the CUDA build that matches your driver if needed)
+**2) Install dependencies (choose the CUDA build that matches your driver if needed)**
 pip install torch torchvision
 
-# 3) Train (auto-downloads CIFAR to ./data)
+**3) Train (auto-downloads CIFAR to ./data)**
 python autoplastic.py
 
 ## Configuration
