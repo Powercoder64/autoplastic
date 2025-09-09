@@ -57,7 +57,6 @@ Edit `TrainConfig` at the top of `autoplastic.py`:
 
 ## Training Notes
 
-- **Mean-field gates:** The residual branch is scaled by `P * C` directly (no per-step sampling), reducing variance and the train/eval mismatch on small models.  
 - **Stability:** `S = exp(-||W − W_EMA||_F)` is evaluated each epoch using an EMA snapshot. If `S ≥ ε`, `α` is frozen next epoch.  
 - **Initialization:** `p_init = c_init = 0.9` with floors (`p_min = 0.50`, `c_min = 0.40`) avoids early under-capacity; pruning still proceeds during training.  
 - **Speed tips:** Enable AMP, use channels-last memory format, and keep attention tokens ≤ `8×8`.
