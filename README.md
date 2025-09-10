@@ -1,6 +1,6 @@
 # Autoplastic Neural Network PyTorch
 
-PyTorch implementation of the **Autoplastic Neural Network (ANN)** on **CIFAR**. The model learns structure and weights jointly:
+PyTorch implementation of the **Autoplastic Neural Network (ANN)**.  The model learns structure and weights jointly:
 
 - **P** — layer inclusion (depth control)  
 - **C** — per-channel connectivity (neuron-level sparsity)  
