@@ -32,8 +32,8 @@ Training is coordinated by a **stability gate** `S = exp(-||ΔW||_F)` and a **tw
 
 **1) Create and activate an environment (example)**
 ```bash
-conda create -n ann-cifar python=3.10 -y
-conda activate ann-cifar
+conda create -n autoplastic python=3.10 -y
+conda activate autoplastic
 ```
 
 **2) Install dependencies (choose the CUDA build that matches your driver if needed)**
